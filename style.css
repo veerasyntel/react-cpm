@@ -1,0 +1,52 @@
+h1, p {
+  font-family: Lato;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.container .card {
+  margin: 4px;
+  width: 250px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+.header {
+  margin: 0px;
+  background: orangered;
+  padding: 5px;  
+  color: white;
+}
+
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  float: right;  
+  margin: 4px;
+}
+i:hover {
+  cursor: pointer;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.button {
+  background-color: orangered;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  margin: 4px;
+  padding: 5px 5px;
+  cursor: pointer;
+  border-radius: 5px 5px;
+}
+.button:hover {
+  background-color: lightcoral;
+}
+@media screen and (max-width: 360px) {
+ .container {
+   flex-direction: column;
+ } 
+}
