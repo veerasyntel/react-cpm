@@ -16,35 +16,257 @@ class App extends Component {
     this.setState({ collapseExpand: !this.state.collapseExpand });
   };
   handleButton = () => {
-    setTimeout( () => {
-      this.setState({buttonName: "loading..."})
+    setTimeout(() => {
+      this.setState({ buttonName: "Loading..." });
     }, 500);
-  }
+  };
   render() {
-    let {buttonName} = this.state;
+    let { buttonName } = this.state;
     return (
       <>
         <div className="header" onClick={this.headerClicked}>
-          Header <i class="arrow down" />
+          Search Options <i class="arrow down" />
         </div>
         {this.state.collapseExpand && (
           <div>
-            <div className="container">
-              <div className="card">One</div>
-              <div className="card">One</div>
-              <div className="card">One</div>
-              <div className="card">One</div>
+            <div className="container1">
+              <div className="card">
+                <div class="card-header">Level ID / EAN</div>
+                <div class="card-body">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="optradio"
+                      />
+                      Option 1
+                    </label>
+                    <label class="form-check-label">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="optradio"
+                      />
+                      Option 1
+                    </label>
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="usr" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="card">
+                <div class="card-header">Hierarchy</div>
+                <div class="card-body">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="optradio"
+                      />
+                      Option 1
+                    </label>
+                    <label class="form-check-label">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="optradio"
+                      />
+                      Option 1
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div className="card">
+                <div class="card-header">Hierarchy Direction Type</div>
+                <div class="card-body">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="optradio"
+                      />
+                      Option 1
+                    </label>
+                    <label class="form-check-label">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="optradio"
+                      />
+                      Option 1
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div className="card">
+                <div class="card-header">Cash Or Delete</div>
+                <div class="card-body">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="optradio"
+                      />
+                      Option 1
+                    </label>
+                    <label class="form-check-label">
+                      <input
+                        type="radio"
+                        class="form-check-input"
+                        name="optradio"
+                      />
+                      Option 1
+                    </label>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="container">
-              <div className="card">One</div>
-              <div className="card">One</div>
-              <div className="card">One</div>
+            <div className="subHeader">Service Group Types</div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="checkbox" class="form-check-input" value="" />
+                All
+              </label>
             </div>
-            <div className="container">
-              <div className="card">One</div>
-              <div className="card">One</div>
+            <div className="container2">
+              <div className="card">
+                <div class="card-header">FXE</div>
+                <div class="card-body">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                      />
+                      Option 1
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                      />
+                      Option 2
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div className="card">
+                <div class="card-header">FXG</div>
+                <div class="card-body">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                      />
+                      Option 1
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                      />
+                      Option 2
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div className="card">
+                <div class="card-header">FXE</div>
+                <div class="card-body">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                      />
+                      Option 1
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                      />
+                      Option 2
+                    </label>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="button" onClick={this.handleButton}>{buttonName}</div>
+            
+            <div className="subHeader">Region / Country</div>
+            <div className="container3">
+              <div className="card">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                      />
+                      Option 1
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                      />
+                      Option 2
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div className="card">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                      />
+                      Option 1
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        value=""
+                      />
+                      Option 2
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="button" onClick={this.handleButton}>
+              {buttonName}
+            </div>
           </div>
         )}
       </>

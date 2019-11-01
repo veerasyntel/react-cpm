@@ -1,21 +1,22 @@
 h1, p {
   font-family: Lato;
 }
-.container {
+.container1, .container2, .container3 {
   display: flex;
   flex-direction: row;
 }
-.container .card {
+.card {
   margin: 4px;
-  width: 250px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
+  width: 100%;
+  box-shadow: 0.2px 0.2px;
 }
+
 .header {
   margin: 0px;
-  background: orangered;
+  background: purple;
   padding: 5px;  
   color: white;
+  font-weight: bold;
 }
 
 i {
@@ -33,20 +34,35 @@ i:hover {
   -webkit-transform: rotate(45deg);
 }
 .button {
-  background-color: orangered;
   text-align: center;
   text-decoration: none;
-  color: white;
-  margin: 4px;
+  margin: 5px;
   padding: 5px 5px;
   cursor: pointer;
   border-radius: 5px 5px;
+  border: 1px solid purple;
+  font-weight: bold;
 }
-.button:hover {
-  background-color: lightcoral;
+.button:hover {  
+  background-color: purple;  
+  color: white;
 }
-@media screen and (max-width: 360px) {
- .container {
-   flex-direction: column;
- } 
+.container1 .form-check {
+    display: inline-grid;
+}
+.container2 .form-check {
+    display: block;
+}
+.container3 .form-check {
+    display: block;
+}
+.form-group {
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+}
+.subHeader {
+    margin: 4px;
+    background: lightgray;
+    padding: 1px;
+    font-weight: bold;
 }
